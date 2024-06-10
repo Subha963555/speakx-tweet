@@ -8,7 +8,6 @@ const userSlice = createSlice({
         profile:null
     },
     reducers:{
-        // multiple actions
         getUser:(state,action)=>{
             state.user = action.payload;
         },
@@ -19,13 +18,11 @@ const userSlice = createSlice({
             state.profile = action.payload;
         },
         followingUpdate:(state,action)=>{
-            // unfollow
             if(state.user.following.includes(action.payload)){
                 state.user.following = state.user.following.filter((itemId)=>{
                     return itemId !== action.payload;
                 })
             }else{
-                // follow
                 state.user.following.push(action.payload);
             }
         }

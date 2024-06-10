@@ -3,12 +3,12 @@ import { IoMdArrowBack } from "react-icons/io";
 import { Link, useParams } from 'react-router-dom';
 import Avatar from "react-avatar";
 import { useSelector,useDispatch } from "react-redux";
-import useGetProfile from '../hooks/useGetProfile';
+import useGetProfile from '../hooks/useMyProfile';
 import axios from "axios";
 import { USER_API_END_POINT } from '../utils/constant';
 import toast from "react-hot-toast"
-import { followingUpdate } from '../redux/userSlice';
-import { getRefresh } from '../redux/tweetSlice';
+import { followingUpdate } from '../redux/userS';
+import { getRefresh } from '../redux/tweetS';
 
 const Profile = () => {
     const { user, profile } = useSelector(store => store.user);

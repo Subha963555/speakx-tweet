@@ -10,7 +10,7 @@ import {useSelector,useDispatch} from "react-redux";
 import axios from "axios";
 import { USER_API_END_POINT } from '../utils/constant';
 import toast from "react-hot-toast"
-import { getMyProfile, getOtherUsers, getUser } from '../redux/userSlice';
+import { getMyProfile, getOtherUsers, getUser } from '../redux/userS';
  
 
 const LeftSidebar = () => {

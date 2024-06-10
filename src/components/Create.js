@@ -5,7 +5,7 @@ import axios from "axios";
 import { TWEET_API_END_POINT } from "../utils/constant";
 import toast from "react-hot-toast"
 import { useSelector, useDispatch } from "react-redux";
-import { getAllTweets, getIsActive, getRefresh } from '../redux/tweetSlice';
+import { getAllTweets, getIsActive, getRefresh } from '../redux/tweetS';
 
 const CreatePost = () => {
     const [description, setDescription] = useState("");

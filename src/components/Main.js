@@ -2,10 +2,10 @@ import React from 'react';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from './Login';
 import Home from './Home';
-import Feed from './Feed';
+import Feed from './NewsFeed';
 import Profile from './Profile';
 
-const Body = () => {
+const Main = () => {
     const appRouter = createBrowserRouter([
         {
             path: "/",
@@ -33,4 +33,4 @@ const Body = () => {
     )
 }
 
-export default Body
+export default Main
